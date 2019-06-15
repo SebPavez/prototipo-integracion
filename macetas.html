@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/macetas.js"></script>
+  <link rel="stylesheet" href="login.css"/>
+  <title>prototipo macetas</title>
+
+</head>
+
+<body>
+  <div id="logreg-forms">
+    <div class="form">
+      <h1 class="h3 mb-3 font-weight-normal" style="text-align: center">Creaci&oacute;n de maceta</h1>
+      <br>
+      <input type="text" id="idMuro" class="form-control" placeholder="id muro" required="" autofocus="">
+      <br>
+      <input type="text" id="estadoSustrado" class="form-control" placeholder="estado sustrato" required="">
+      <br>
+      <input type="text" id="estadoMaceta" class="form-control" placeholder="estado maceta" required="">
+      <br>
+     
+      <button class="btn btn-success btn-block" onclick="crearMaceta()" type="button"><i class="fas fa-sign-in-alt"></i> Crear</button>
+    </div>
+    <br/>
+  </div>
+
+<div id="logreg-forms">
+  <div class="form">
+    <h1 class="h3 mb-3 font-weight-normal" style="text-align: center">Deshabilitar maceta</h1>
+    <br>
+    <input type="number" id="idDel" class="form-control" placeholder="Id por deshabilitar" required="">
+    <br>
+    
+    <button class="btn btn-success btn-block" onclick="deshabilitarMaceta()" type="button"><i class="fas fa-sign-in-alt"></i> Modificar</button>
+  </div>
+  <br/>
+</div>
+
+
+
+  
+  <div id="logreg-forms">
+    <div class="form">
+      <h1 class="h3 mb-3 font-weight-normal" style="text-align: center">Listar macetas por muro</h1>
+      <input type="number" id="idMuroListar" class="form-control" placeholder="Id muro" required="">
+    <br>
+      <button class="btn btn-success btn-block" onclick="listarMacetasMuro()" type="button"><i class="fas fa-sign-in-alt"></i> Listar</button>
+    </div>
+    <br/>
+  </div>
+
+  <div id="logreg-forms">
+    <div class="form">
+      <h1 class="h3 mb-3 font-weight-normal" style="text-align: center">Listar todas las macetas</h1>
+      
+      <button class="btn btn-success btn-block" onclick="listarMacetas()" type="button"><i class="fas fa-sign-in-alt"></i> Listar</button>
+    </div>
+    <br/>
+  </div>
+</body>
+</html>
