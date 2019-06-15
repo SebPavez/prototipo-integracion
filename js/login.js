@@ -21,7 +21,7 @@ function autenticar(){
             cargo = respuesta.cargo;
             console.log(respuesta.glosa);
             alert(cargo);
-            window.location.href = "index.html";
+            window.location.href = "landing.html";
         }
     }).catch(function(errormsg){
         console.log("catched");
